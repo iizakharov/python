@@ -9,27 +9,38 @@
 # * постарайтесь решить задачу с применением арифметики и цикла while;
 # * при желании и понимании решите задачу с применением цикла for.
 
-x = int(input("Введите число: "))
-max_i = 0
-while x%10 > 1:
-    if x%10 <= 1:
-        continue
-    elif x%10 == 0:
-        continue
-    else:
-        i = x%10
-        x //= 10
-        if i > max_i:
-            max_i = i
-print('Максимальная цифра в числе ', max_i)
+# x = int(input("Введите число: "))
+# max_i = 0
+# while x%10 > 1:
+#     if x%10 <= 1:
+#        continue
+#     elif x%10 == 0:
+#         continue
+#     else:
+#         i = x%10
+#         x //= 10
+#         if i > max_i:
+#             max_i = i
+# print('Максимальная цифра в числе ', max_i)
 
 #ВАРИАНТ 2
 
-i = []
-x = int(input("Введите число: "))
-y = str[x]
-i.append(y)
-print(i)
+x = input("Введите число: ")
+max_i = 0
+for i in x:
+        if i == "9":
+            if int(i) > max_i:
+                max_i = i
+        elif i == "8":
+            if int(i) > max_i:
+                max_i = i
+        elif i == "7":
+            if int(i) > max_i:
+                max_i = i
+        else: print("Ne vishlo")
+
+print("Максимальное число: ", max_i)
+
 
 
     
